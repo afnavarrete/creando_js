@@ -29,6 +29,7 @@
 </head>
 
 <body class="bg-durazno">
+    <div id="snackbar">Tu pedido ha sido añadido al carrito</div>
     <header>
         <!--NAVBAR DE BTSTP-->
         <nav class="navbar navbar-expand-lg bg-durazno">
@@ -46,43 +47,52 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/admin.html">Administrador</a>
                     </ul>
                 </div>
             </div>
         </nav>
         <h1 class="horarioCopal">
-            Elegí la cantidad de Menú que queres comprar
+            Bienvenidos a Copal Cocina Vegetariana
         </h1>
     </header>
 
 
     <main class="container-fluid">
         <!--3 CARDS-->
-        <div class="row justify-content-around">
+        <div class="row justify-content-around ">
+
+            <!--agrego el btmenu1 para usar con sweet alert-->
             <div class="card misCards" style="width: 20rem;">
                 <img src="./multimedia/menu_1 (1).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"> 1 Menú Semanal </h5>
-                    <p class="card-text">Quiero el menú del día con Envío Gratuito</p>
-                    <a id="btn1" href="./paginas/carrito.html" class="btn ">Añadir al Carrito</a>
+                    <h5 id="btmenu1" class="card-title ">Menú Lunes</h5>
+                    <p class="card-text">Contamos con <br> ENVIO GRATUITO! <br> de 11 a 13hs </p>
+                    <a id="btn1" class="btn ">Añadir al Carrito</a>
                 </div>
             </div>
+
+
             <div class="card misCards" style="width: 20rem;">
                 <img src="./multimedia/menu_1 (2).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title"> 2 Menú del Día </h5>
-                    <p class="card-text">Quiero dos menú del día con Envío Gratuito</p>
-                    <a id="btn2" href="./paginas/carrito.html" class="btn ">Añadir al Carrito</a>
+                    <h5 id="btmenu2" class="card-title">Menú Martes</h5>
+                    <p class="card-text">Contamos con <br> ENVIO GRATUITO!<br> de 11 a 13hs</p>
+                    <a id="btn2" class="btn ">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card misCards" style="width: 20rem;">
+
+
+            <div id="btmenu3" class="card misCards" style="width: 20rem;">
                 <img src="./multimedia/menu_1 (3).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">3 Menú del Día</h5>
-                    <p class="card-text">Quiero 3 menú del día con Envío Gratuito</p>
-                    <a id="btn3" href="./paginas/carrito.html" class="btn ">Añadir al Carrito</a>
+                    <h5 class="card-title">Menú Miércoles</h5>
+                    <p class="card-text">Contamos con <br> ENVIO GRATUITO!<br> de 11 a 13hs</p>
+                    <a id="btn3" class="btn ">Añadir al Carrito</a>
                 </div>
             </div>
+
         </div>
         <p class="lh-lg mediosPago fst-italic fs-3">Podés Abonar tus Viandas en Efectivo; por Transferencia Bancaria</p>
         <p class="lh-lg mediosPago fst-italic fs-3">o Mediante Mercado Pago con Débito o Crédito</p>
@@ -90,20 +100,20 @@
 
         <!--2 CARDS-->
         <div class="row  justify-content-around">
-            <div class="card misCards" style="width: 20rem;">
+            <div id="btmenu4" class="card misCards" style="width: 20rem;">
                 <img src="./multimedia/menu_1 (4).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">4 Menú del Día</h5>
-                    <p class="card-text">Quiero 4 menú del día con Envío Gratuito</p>
-                    <a id="btn4" href="./paginas/carrito.html" class="btn ">Añadir al Carrito</a>
+                    <h5 class="card-title">Menú Jueves</h5>
+                    <p class="card-text">Contamos con <br> ENVIO GRATUITO!<br> de 11 a 13hs</p>
+                    <a id="btn4" class="btn ">Añadir al Carrito</a>
                 </div>
             </div>
-            <div class="card misCards" style="width: 20rem;">
+            <div id="btmenu5" class="card misCards" style="width: 20rem;">
                 <img src="./multimedia/menu_1 (5).jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Comprar Semana Completa </h5>
-                    <p class="card-text"> Quiero 5 menú de la semana con Envío Gratuito</p>
-                    <a id="btn5" href="./paginas/carrito.html" class="btn ">Añadir al Carrito</a>
+                    <h5 class="card-title">Menú Viernes </h5>
+                    <p class="card-text"> Contamos con <br> ENVIO GRATUITO!<br> de 11 a 13hs</p>
+                    <a id="btn5" class="btn ">Añadir al Carrito</a>
                 </div>
             </div>
         </div>
@@ -136,8 +146,10 @@
         crossorigin="anonymous"></script>
 
     <!--MI JS LINKEADO-->
-    <script src="./tercerpreentrega.js"></script>
+    <script src="./index.js"></script>
 
+    <!--SWEET ALERT-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

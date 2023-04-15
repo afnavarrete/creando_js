@@ -8,6 +8,7 @@
 .redondo {
     border-radius: 150px;
 }
+
 .navbar-nav {
     --bs-navbar-color: #ff914d;
     --bs-navbar-hover-color: #ff914d;
@@ -47,6 +48,7 @@
     font-size: 20px;
     color: #ff914d;
     margin-top: 20px;
+    text-align: center;
 }
 
 .card-body {
@@ -56,16 +58,18 @@
 
 .btn {
     font-family: "Dosis";
-    border:none;
+    border: none;
     font-size: 20px;
     color: white;
-    padding: 15px;
+    padding: 30px;
     background-color: #ff914d;
-    border-radius: 50px;
+    margin: 30px;
+    
 }
+
 /*FOOTER*/
 .colorWsp,
-.card-title{
+.card-title {
     font-family: "Dosis";
     text-align: center;
     font-size: 30px;
@@ -80,6 +84,7 @@
     height: 55px;
     border-radius: 10px;
 }
+
 /*FIRMA*/
 .colorTexto {
     font-family: "Dosis", sans-serif;
@@ -95,12 +100,123 @@
     text-align: center;
     color: #ff914d;
 }
-.suCompra{
+
+.suCompra {
     font-family: "Dosis", sans-serif;
     text-align: center;
     font-size: 35px;
-    color:rgb(185, 237, 179);
-    background-color: #208b15;
+    color: white;
+    background-color: #e76515;
     margin: 80px;
     padding: 30px;
+}
+
+/*SNACKBAR DE PEDIDO EN EL CARRITO*/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #ff914d;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+/* SNACKBAR CUANDO SE CLICKEA*/
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/*SNACKBAR ANIMACION */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/*ESTILOS A PAGINA ADMINISTRADOR*/
+.modifMenu {
+    font-family: "Dosis";
+    font-size: 23px;
+    color: #ff914d;
+    padding: 50px;
+    text-align: center;
+}
+
+.casilleros {
+    font-family: "Dosis";
+    color: #ff914d;
+    border-radius: 10px;
+    border-color: #ff914d;
+    background-color:  #f8e4b0;
+    
+}
+.tituloAdmin{
+    font-size: 25px;
+    background-color:#e76515;
+    border-radius: 10px;
+    color:white;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+    font-weight: 100;
+}
+.botonGuardarCambios{
+    font-family: "Dosis";
+    font-size: 25px;
+    background-color: #e76515;    
+    color: white;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-left: 660px; 
 }
