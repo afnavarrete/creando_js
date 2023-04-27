@@ -54,7 +54,7 @@ btmenu2.addEventListener("click", function () {
             icon: 'info',
             color: `#ff914d`,
             html:
-                `El menú del día Lunes es :<br>` + rest[1].ingrediente1 + `<br>` + rest[1].ingrediente2 + `<br>` + rest[1].ingrediente3 + `<br>$` + rest[1].precio,
+                `El menú del día Martes es :<br>` + rest[1].ingrediente1 + `<br>` + rest[1].ingrediente2 + `<br>` + rest[1].ingrediente3 + `<br>$` + rest[1].precio,
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText:
@@ -87,7 +87,7 @@ btmenu3.addEventListener("click", function () {
             icon: 'info',
             color: `#ff914d`,
             html:
-                `El menú del día Lunes es :<br>` + rest[2].ingrediente1 + `<br>` + rest[2].ingrediente2 + `<br>` + rest[2].ingrediente3 + `<br>$` + rest[2].precio,
+                `El menú del día Miercoles es :<br>` + rest[2].ingrediente1 + `<br>` + rest[2].ingrediente2 + `<br>` + rest[2].ingrediente3 + `<br>$` + rest[2].precio,
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText:
@@ -120,7 +120,7 @@ btmenu4.addEventListener("click", function () {
             icon: 'info',
             color: `#ff914d`,
             html:
-                `El menú del día Lunes es :<br>` + rest[3].ingrediente1 + `<br>` + rest[3].ingrediente2 + `<br>` + rest[3].ingrediente3 + `<br>$` + rest[3].precio,
+                `El menú del día Jueves es :<br>` + rest[3].ingrediente1 + `<br>` + rest[3].ingrediente2 + `<br>` + rest[3].ingrediente3 + `<br>$` + rest[3].precio,
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText:
@@ -152,7 +152,7 @@ btmenu5.addEventListener("click", function () {
             icon: 'info',
             color: `#ff914d`,
             html:
-                `El menú del día Lunes es :<br>` + rest[4].ingrediente1 + `<br>` + rest[4].ingrediente2 + `<br>` + rest[4].ingrediente3 + `<br>$` + rest[4].precio,
+                `El menú del día Viernes es :<br>` + rest[4].ingrediente1 + `<br>` + rest[4].ingrediente2 + `<br>` + rest[4].ingrediente3 + `<br>$` + rest[4].precio,
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText:
